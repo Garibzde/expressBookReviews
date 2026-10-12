@@ -4,7 +4,6 @@ let isValid = require("./auth_users.js").isValid;
 let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
-// Task 6: Yeni kullanıcı kaydı (Register)
 public_users.post("/register", (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
